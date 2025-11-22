@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Coro Agape </title>
+        <link rel="stylesheet" href="estilos Agape.css">
+    </head>
+    <body> <center>
+        <div class="Inicio">
+        <h1 id="coro">Coro Agape</h1>
+        </div>
+        
+        <!--Coso de busqueda-->
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="Logo_Agape.png" alt="Logo de Agape">
+            </div>
+
+            <nav class="menu">
+                <a href="Sitio web Agape.html">Inicio</a>
+                <a href="Sitio web Agape historia.html">Historia</a>
+                <!--dejamos este para los cantos-->
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar..." class="search-input">
+                <button id="search-btn" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </header>
+        <script>
+           const searchBtn = document.getElementById('search-btn');
+           const searchContainer = document.querySelector('.search-container');
+
+           searchBtn.addEventListener('click', () => {
+           searchContainer.classList.toggle('active');
+           document.getElementById('search').focus();
+          });
+        </script>
+
+
+        <!--Galeria de fotos-->
+        <h2>Galería Deslizante</h2>
+
+  <div class="slider-container">
+    <div class="slider" id="slider">
+      <img src="img/foto1.png" alt="Eveto 1">
+      <img src="img/foto2.png" alt="Evento 2">
+      <img src="img/foto3.png" alt="Evento 3">
+      <img src="img/foto4.jpeg" alt="Evento 4">
+      <img src="img/foto5.jpeg" alt="Evento 5">
+    </div>
+
+    <button class="arrow prev" id="prev">&#10094;</button>
+    <button class="arrow next" id="next">&#10095;</button>
+  </div>
+
+  <script>
+    const slider = document.getElementById('slider');
+    const slides = slider.querySelectorAll('img');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    let index = 0;
+
+    function showSlide(i) {
+      // Calcula el desplazamiento exacto por imagen
+      slider.style.transform = `translateX(${-i * 100}%)`;
+    }
+
+    next.addEventListener('click', () => {
+      index = (index + 1) % slides.length;
+      showSlide(index);
+    });
+
+    prev.addEventListener('click', () => {
+      index = (index - 1 + slides.length) % slides.length;
+      showSlide(index);
+    });
+  </script>
+
+            <h3>¡Conocenos!</h3>
+        </div>
+
+        <div class="cita-biblica">
+            <p id="cita"> Salmos 96:1-2: «Canten al Señor un cántico nuevo;<br>
+                canten al Señor, habitantes de toda la tierra.<br>
+                 Canten al Señor, bendigan su nombre, anuncien
+                  día tras día su salvación.»</p>
+        </div>
+
+        <br>
+        <hr class="gradient-line">
+        <br>
+        <div class="reflexion">
+            <p>Agape significa "Amor incondicional", es por eso que este coro,
+            canta con todo el corazon por Dios y para Dios. Nuestros integrantes
+            son considerados familia, nos enfocamos en el respeto, compromiso, 
+            amor, y amistad. Consideramos que esos valores son la base de todo.
+            </p>
+        </div>
+        <br>
+        <hr class="gradient-line">
+        <br>
+        <div class="redes">
+            <p>Nuestras redes sociales</p>
+            <p>Instagram: @agape_pjll</p>
+        </div>
+
+
+    </body></center>
+
+</html>
