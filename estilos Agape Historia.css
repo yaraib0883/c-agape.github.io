@@ -1,0 +1,88 @@
+body{
+    background-color: aliceblue;
+}
+
+.Inicio{
+    background-color:#171a4a ;
+}
+
+h1{
+    color: aliceblue;
+    font-family: Caveat;
+    font-size: 50px;
+}
+
+p{
+  font-family: Caveat;
+  font-size: 20px;
+}
+
+#cita{
+    font-size: 18px;
+    text-align: left;
+}
+
+#foto1{
+    width: 240px;
+    height: 200px;
+    text-align:right ;
+    float: right;
+}
+
+.gradient-line {
+    border: none;
+    height: 4px;
+    background: linear-gradient(to right, #171a4a, #171a4a);
+    margin: 20px 0;
+  }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 40px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo img {
+  height: 100px;
+}
+
+.menu a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #171a4a;
+  font-weight: 600;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #171a4a;
+}
+
+/* Cuando el input está activo */
+.search-container.active .search-input {
+  width: 180px;
+  opacity: 1;
+}

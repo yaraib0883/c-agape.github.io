@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coro Agape</title>
+        <link rel="stylesheet" href="estilos Agape Historia.css">
+    </head>
+
+    <body><center>
+        <div class="Inicio">
+        <h1 id="coro">Coro Agape</h1>
+        </div>
+        
+        <!--Coso de busqueda-->
+
+        <header class="navbar">
+            <div class="logo">
+                <img src="Logo_Agape.png" alt="Logo de Agape">
+            </div>
+
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="Sitio web Agape historia.html">Historia</a>
+                <!--Dejamos este para mas de rato-->>
+            </nav>
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Buscar..." class="search-input">
+                <button id="search-btn" class="search-btn">
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </header>
+        <script>
+           const searchBtn = document.getElementById('search-btn');
+           const searchContainer = document.querySelector('.search-container');
+
+           searchBtn.addEventListener('click', () => {
+           searchContainer.classList.toggle('active');
+           document.getElementById('search').focus();
+          });
+        </script>
+        <h3>Nuestro trayecto...</h3>
+        <p>
+            El coro Ágape mostro su luz por primera vez en Abril del 2024.
+            <img src="img/foto1.png" id="foto1" alt="Evento 1">
+            Inicio siendo una idea para tener un coro juvenil que uniera a 
+            los adolescentes.
+            Agapé inicio teniendo entre 10 a 15 integrantes, afortunadamente
+            y con la gracia de <br>Dios los chicos y chicas se sintieron llamados 
+            al apostolado, teniendo hoy un total de 30 integrantes que participan
+            activamente.
+            Al ser un coro creado por adolescentes, coordinado por adolescentes 
+            y integrado por adolescentes es muy activo emocionalmente.
+            Agapé tiene muchos integrantes y aunque es impresionante, no todos tienen
+            la oportunidad de asistir a todos los ensayos o misas por temas escolares,
+            profesionales o sociales, es por eso que se tiene mucha consideración, sin
+            embargo eso no quita el hecho del compromiso con coro Ágape y con el objetivo 
+            que tenemos, que es adorar a Dios.
+            <br>
+            <br>
+            Ágape tiene multiples valores que lo identifican, el principal de ellos es el amor
+            incondiconal que se tiene a Dios y apartir de ahi surgio el respeto, la amistad,
+            el compromiso, la solidaridad y la empatia.<br><br>
+            El camino fue largo, hubo dificultades, criticas y quiebres, pero si de algo nos 
+            orgullesemos es la fuerte insistencia que se tiene para servir a Dios.
+            <br> 
+            <hr class="gradient-line">
+            <p>Todavia tenemos mucho trayecto por delante pero unidos a Dios y a nosotros confiamos
+             en que podemos lograrlo.</p>
+
+        </p>
+
+    </body></center>
+</html>
